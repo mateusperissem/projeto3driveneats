@@ -2,9 +2,29 @@
 
 
 
+
+*{
+    box-sizing: border-box;
+}
+.ultimalin{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.botaocheck{
+    display: none;
+    padding-top: 10px;
+    color: #32B72F;
+    font-size: 20px;
+
+}
+.visivel{
+    display: initial;
+}
+
 body{
     margin: 0 auto;
-    width: 414px;
+    width: 100%;
     position: relative;
 }
 
@@ -62,16 +82,20 @@ p{
     margin-top: 20px;
     display: flex;
     overflow: scroll;
+    padding: 5px;
 }
 
 .item{
     width: 172px;
-    height: 190px;
+    min-height: 198px;
     background-color: #FFFFFF;
     border-radius: 9px;
     padding: 20px 15px 20px 15px;
     margin-right: 15px;
     font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
 }
 h3,h4,h5{
@@ -96,12 +120,19 @@ h5{
     font-weight: 400;
 }   
 
+.sobremesa{
+    margin-bottom: 92px;
+}
+
 
 
 .topoSoQueEmBaixo{
+    position: fixed;
+    top: calc(100vh - 92px);
+    left: 0; 
     background-color: #FFFFFF;
     height: 92px;
-    width: 414px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -110,7 +141,7 @@ h5{
     border-radius: 50px;
     color: #fff;
     height: 61px;
-    width: 364px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 16px;
     text-align: center;
@@ -119,6 +150,16 @@ h5{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    justify-content: center;
+
     
 }
 
+
+.selecionado{
+    outline: 4px #32B72F solid
+}
+
+.fecharPedido{
+    background-color: #32B72F;
+}
